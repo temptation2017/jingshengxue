@@ -1,26 +1,14 @@
 import Link from 'next/link';
-import { STAGES } from '@/lib/site';
-const NODES = [
-  ['2026-10-09 起', '2027 随迁子女在京参加高职考试报名（考试院通知，11/11 前现场确认）'],
-  ['每年 3–4 月', '市教委发布中招意见、义务教育入学意见（2027 版尚未发布）'],
-  ['每年 4–5 月', '各区发布义务教育实施意见；海淀 2026 年京户采集为 5/6–5/31'],
-  ['每年 5 月底–6 月', '幼儿园小班信息采集；海淀 2026 年为 6/1–6/15'],
-  ['每年 6 月', '小学登记入学（海淀 2026 为 6/13–14）、中考（2026 为 6/24–25）'],
-];
-export default function Home() {
-  return (<div className="space-y-8">
-    <section className="bg-apricot rounded-xl p-5">
-      <h1 className="text-3xl font-bold">我家孩子明年能上哪类学校？差什么材料？</h1>
-      <p className="mt-2">把北京从幼儿园到大学的入学条件——年龄截止日、户口、房子、居住证、社保、材料、时间线——整理成表格，每条都挂官方原文链接。</p>
-      <Link href="/quiz/" className="inline-block mt-4 bg-brick text-white no-underline rounded-lg px-5 py-3 text-xl font-bold">开始 30 秒自测 →</Link>
-    </section>
-    <section><h2 className="text-2xl font-bold mb-3">按学段查</h2>
-      <ul className="grid sm:grid-cols-2 gap-3">{STAGES.map(([s, t]) => <li key={s}><Link href={`/stages/${s}/`} className="block bg-white border-2 border-pine rounded-lg p-4 no-underline text-ink font-bold text-lg">{t}</Link></li>)}
-        <li><Link href="/haidian/" className="block bg-white border-2 border-ochre rounded-lg p-4 no-underline text-ink font-bold text-lg">海淀专章（含苏家坨/科学城北区）</Link></li></ul>
-    </section>
-    <section><h2 className="text-2xl font-bold mb-3">关键节点</h2>
-      <ol className="space-y-2">{NODES.map(([d, t]) => <li key={d} className="bg-white rounded p-3 border-l-4 border-pine"><strong>{d}</strong>：{t}</li>)}</ol>
-      <p className="mt-2 text-base">2027 学年入园与义务教育细则<strong>截至 2026-10-12 尚未发布</strong>，届时以当年文件为准。<Link href="/calendar/">完整日历</Link></p>
-    </section>
-  </div>);
-}
+import HomeCTA from '@/components/HomeCTA';
+export const metadata = { title: { absolute: '京升学 · 北京升学路线图' } };
+const L = [['1', '你现在该做什么', '回答 4 个问题，得到路线图和下一步清单', '/start/'], ['2', '这个阶段怎么运作', '用白话讲入园、幼升小、小升初、中考、高考', '/learn/'], ['3', '进阶资料', '政策原文、字段表、海淀专章、变更日志', '/library/']];
+export default function Home() { return (<div className="space-y-10">
+  <section className="pt-4"><p className="chip bg-soft text-accent">非官方 · 每条附官方原文</p>
+    <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">孩子在北京上学，<br />下一步该做什么？</h1>
+    <p className="mt-4 text-lg text-muted">告诉我们孩子的出生年月、区、户口和住房，30 秒生成从幼儿园到大学的路线图，并告诉你最近一件事怎么一步步办。</p>
+    <div className="mt-6"><HomeCTA /></div></section>
+  <section aria-labelledby="h-layers"><h2 id="h-layers" className="text-xl font-bold">由浅入深，三层就够</h2>
+    <ul className="mt-4 grid gap-3">{L.map(([n, t, d, h]) => <li key={n}><Link href={h} className="card group flex items-center gap-4 p-4 no-underline text-ink transition hover:shadow-lift">
+      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-soft font-bold text-accent">{n}</span><span className="flex-1"><span className="block font-semibold">{t}</span><span className="block text-sm text-muted">{d}</span></span><span aria-hidden className="text-muted transition group-hover:translate-x-1">→</span></Link></li>)}</ul></section>
+  <section className="card p-5"><h2 className="font-bold">你需要知道的一件事</h2><p className="mt-1 text-muted">2027 年的入园、幼升小细则截至 2026-10-12 还没有发布。本站对 2027 年及以后的推算都按 2026 年官方文件的结构，届时以当年文件为准。</p></section>
+</div>); }

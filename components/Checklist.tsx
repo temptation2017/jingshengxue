@@ -6,7 +6,7 @@ const G: [string, string[]][] = [
  ['大学 · 随迁子女高职（2027）', ['身份证', '亲子关系证明', '居住证类证件', '社保缴费记录（2021-09 至 2026-08 连续）', '学籍/毕业证明']],
 ];
 export default function Checklist() { return (<div>
-  <button onClick={() => window.print()} className="no-print bg-pine text-white rounded px-4 py-2 mb-4">打印 / 另存为 PDF</button>
-  {G.map(([t, items]) => <fieldset key={t} className="bg-white border rounded p-3 mb-4"><legend className="font-bold text-xl px-1">{t}</legend>
+  <button onClick={() => window.print()} className="no-print bg-accent text-accent-ink rounded px-4 py-2 mb-4">打印 / 另存为 PDF</button>
+  {G.map(([t, items]) => <fieldset key={t} className="card p-3 mb-4"><legend className="font-bold text-xl px-1">{t}</legend>
     {items.map(i => <label key={i} className="flex gap-3 items-start py-1"><input type="checkbox" className="w-6 h-6 mt-1 shrink-0" />{i}</label>)}</fieldset>)}
 </div>); }

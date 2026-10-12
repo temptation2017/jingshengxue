@@ -1,0 +1,4 @@
+import Link from 'next/link'; import { LESSONS } from '@/lib/learn'; import { PageHead } from '@/components/ui';
+export const metadata = { title: '了解流程' };
+export default function P() { return <><PageHead eyebrow="第 2 层 · 这个阶段怎么运作" title="了解流程" desc="五站，每站 2 分钟读完。专业词都配了白话。" />
+ <ol className="grid gap-3">{LESSONS.map((l, i) => <li key={l.slug}><Link href={`/learn/${l.slug}/`} className="card flex gap-4 p-4 no-underline text-ink transition hover:shadow-lift"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent font-bold text-accent-ink">{i + 1}</span><span><span className="block font-semibold">{l.title} <span className="text-sm font-normal text-muted">· {l.age}</span></span><span className="block text-sm text-muted">{l.oneLine}</span></span></Link></li>)}</ol></>; }
