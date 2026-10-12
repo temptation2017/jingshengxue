@@ -1,0 +1,447 @@
+[
+ {
+  "id": "bj-jw-compulsory-2026",
+  "stage": "primary+junior",
+  "district": "beijing",
+  "schoolYear": "2026",
+  "title": "北京市教育委员会关于2026年义务教育阶段入学工作的意见",
+  "summary": "全市义务教育入学框架：免试就近、登记入学为主、单校与多校划片结合；京户满6周岁（2020-08-31以前出生）须信息采集；非京户街镇联审；禁止考试选拔。",
+  "rules": [
+   "本市户籍适龄儿童凡年满6周岁（2020年8月31日以前出生）均须参加学龄人口信息采集，免试就近入学",
+   "本市户籍无房家庭适龄子女在非户籍所在区入学按有关规定办理",
+   "非本市户籍：父母持务工就业材料、实际住所材料、全家户口簿、北京市居住证到居住地街镇审核",
+   "继续积极为多孩子女同校就读创造条件"
+  ],
+  "ageRule": "满6周岁；2026年对应2020年8月31日以前出生",
+  "hukouRule": "京户就近；按本市户籍对待含台胞/华侨/博士后/随军办理中/父母一方京户或持工作居住证等",
+  "housingRule": "无房跨区按有关规定；细则在区",
+  "residencePermitRule": "非京户须持北京市居住证参与街镇审核",
+  "materials": [
+   "全家户口簿",
+   "在京务工就业材料",
+   "在京实际住所居住材料",
+   "北京市居住证（非京户）"
+  ],
+  "timeline": [
+   "各区按市统一时间程序；具体月日见区细则与入学平台"
+  ],
+  "officialUrls": [
+   "https://www.beijing.gov.cn/zhengce/zhengcefagui/202604/t20260417_4589381.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "市级",
+   "义务教育",
+   "幼升小",
+   "小升初",
+   "京教基二〔2026〕7号"
+  ]
+ },
+ {
+  "id": "hd-gov-compulsory-2026",
+  "stage": "primary+junior",
+  "district": "haidian",
+  "schoolYear": "2026",
+  "title": "北京市海淀区人民政府关于2026年义务教育阶段入学工作的实施意见",
+  "summary": "海淀落实市级意见：六类小学入学条件；登记入学+派位；六年一学位/九年一学位；19.1.1后购房派位；多孩同校创造条件。",
+  "rules": [
+   "小学条件含：海淀户籍实际居住；外区京户海淀住宅类房产；外区京户无房租住就业满3年等；按本市户籍对待；非京户联审",
+   "六年一学位：原则上六年内只提供一个登记入学学位（符合国家生育政策的适龄儿童除外）",
+   "2019年1月1日后取得不动产权证书用于入学：电脑派位多校划片",
+   "2020年后新建中小学继续多校划片派位"
+  ],
+  "ageRule": "凡年满6周岁（2020年8月31日以前出生）",
+  "hukouRule": "海淀户籍或外区京户符合房产/无房条件；非京户联审；按本市户籍对待类别",
+  "housingRule": "合法住宅类房产；租住须平台备案等；19.1.1派位；六年/九年一学位",
+  "residencePermitRule": "非京户详见附件审核细则（居住证起始日等绑定2026学年）",
+  "materials": [
+   "全家户口簿",
+   "房产证明或租赁备案材料",
+   "信息采集表",
+   "非京户另附居住证与社保等"
+  ],
+  "timeline": [
+   "5月信息采集",
+   "6月登记与派位",
+   "7月上旬通知书"
+  ],
+  "officialUrls": [
+   "https://zyk.bjhd.gov.cn/zwdt/szgb/wqgb/202602/202607/t20260724_4823196.shtml"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "海淀",
+   "义务教育",
+   "六年一学位",
+   "19.1.1"
+  ]
+ },
+ {
+  "id": "hd-faq-compulsory-2026",
+  "stage": "primary+junior",
+  "district": "haidian",
+  "schoolYear": "2026",
+  "title": "关于2026年义务教育阶段入学工作的实施意见政策解读",
+  "summary": "问答式细化时间节点、登录方式、房户一致、多孩同校、非京户材料月数、初中志愿派位日程。",
+  "rules": [
+   "小学采集：京户等5月6日—31日；部分类型/非京户注册多在5月6日—15日",
+   "房户一致：父母海淀合法住宅类房产且实际居住，儿童随父母落户该地址",
+   "多孩子女同校：小学一至五年级二孩随大孩同校或相邻校，采集勾选申请",
+   "非京户居住证有效期起始日须为2025年9月1日前（不含当日）；社保2025-09至2026-05海淀连续缴费"
+  ],
+  "ageRule": "满6周岁（2020-08-31以前出生）；超龄2019-09-01前出生走学区预审",
+  "hukouRule": "同实施意见六类条件",
+  "housingRule": "购房证/预售备案；租房合同与完税；公租房合同；禁止地下室车库等",
+  "residencePermitRule": "住址海淀且有效；起始日约束见上",
+  "materials": [
+   "信息采集表",
+   "户口簿",
+   "房产或租赁材料",
+   "居住证",
+   "社保证明",
+   "知情同意书等"
+  ],
+  "timeline": [
+   "5/6–31采集",
+   "6/5–6派位志愿",
+   "6/11派位确认",
+   "6/13–14登记",
+   "6/22–23与6/30为19.1.1",
+   "7月通知书"
+  ],
+  "officialUrls": [
+   "https://zyk.bjhd.gov.cn/zwdt/szgb/zcjd/202607/t20260724_4823209.shtml",
+   "https://yjrx.bjedu.cn/"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "海淀",
+   "FAQ",
+   "非京户",
+   "多孩同校"
+  ]
+ },
+ {
+  "id": "hd-kinder-faq-2026",
+  "stage": "kindergarten",
+  "district": "haidian",
+  "schoolYear": "2026",
+  "title": "关于2026年海淀区幼儿园适龄儿童信息采集常见问题答疑",
+  "summary": "明确2026小班出生窗口、采集时间、2–5个意向、招生顺位录取、学区咨询电话（含温泉苏家坨）。",
+  "rules": [
+   "小班对象：2022年9月1日至2023年8月31日期间出生且户籍所在地或家庭实际居住在海淀区",
+   "系统开放：2026年6月1日—6月15日",
+   "填报2–5个有序入园意向；按园招生顺位录取；报名时间不影响优先序",
+   "不参加信息采集不能走统一招生第一步；不保证被意向园录取"
+  ],
+  "ageRule": "小班：2022-09-01至2023-08-31出生；托班见各园简章",
+  "hukouRule": "户籍所在地或家庭实际居住在海淀区",
+  "housingRule": "以各园招生顺位/简章为准（本答疑未列统一房产硬门槛）",
+  "residencePermitRule": "本答疑未写统一居住证月数；待简章",
+  "materials": [
+   "平台上传清晰证件影像≤1M",
+   "现场材料以幼儿园通知为准"
+  ],
+  "timeline": [
+   "2026-06-01至06-15采集报名",
+   "此后园审录取"
+  ],
+  "officialUrls": [
+   "https://www.bjhdedu.cn/gongkai/tzgg/202605/t20260529_92765.html",
+   "https://ryfw.bjedu.cn"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "海淀",
+   "幼儿园",
+   "苏家坨学区电话62456746"
+  ]
+ },
+ {
+  "id": "hd-kinder-roster-2026",
+  "stage": "kindergarten",
+  "district": "haidian",
+  "schoolYear": "2026",
+  "title": "2026年海淀区幼儿园小班招生名录",
+  "summary": "经区教委审批有资质园所名录；含苏家坨镇凤仪分园、童心家园等公办园地址与咨询电话。",
+  "rules": [
+   "名录内幼儿园为正式审批有办园资质",
+   "家长在公布名录中选择意向园",
+   "苏家坨镇条目含苏家坨镇幼儿园、凤仪分园、童心家园幼儿园等"
+  ],
+  "ageRule": "适用小班招生（年龄窗口见入园答疑）",
+  "hukouRule": "",
+  "housingRule": "",
+  "residencePermitRule": "",
+  "materials": [],
+  "timeline": [
+   "与2026年6月采集季同步使用"
+  ],
+  "officialUrls": [
+   "https://www.bjhdedu.cn/gongkai/tzgg/202605/t20260529_92769.html",
+   "https://zyk.bjhd.gov.cn/jbdt/auto4489_51785/zdly/202606/t20260603_4817112.shtml"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "海淀",
+   "幼儿园名录",
+   "苏家坨",
+   "科学城北区"
+  ]
+ },
+ {
+  "id": "bj-kinder-district-notices-2026",
+  "stage": "kindergarten",
+  "district": "beijing",
+  "schoolYear": "2026",
+  "title": "本月开始报名！北京各区发布幼儿园招生工作公告",
+  "summary": "首都之窗汇总：全市入园平台 ryfw.bjedu.cn；各区采集窗口不同；海淀为6月1日—15日。",
+  "rules": [
+   "6月1日起市级适龄幼儿入园服务平台各区入口陆续开放",
+   "海淀信息采集6月1日—15日，可查小班/托班名录与招生简章",
+   "各区志愿数量与补录规则不同"
+  ],
+  "ageRule": "以各区公告及区平台为准",
+  "hukouRule": "以各区为准",
+  "housingRule": "以各区/园所为准",
+  "residencePermitRule": "以各区为准",
+  "materials": [],
+  "timeline": [
+   "多数区集中在2026年6月信息采集"
+  ],
+  "officialUrls": [
+   "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202606/t20260604_4685525.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "市级汇总",
+   "幼儿园",
+   "区差异"
+  ]
+ },
+ {
+  "id": "bj-jw-senior-2026",
+  "stage": "senior",
+  "district": "beijing",
+  "schoolYear": "2026",
+  "title": "北京市教育委员会关于做好2026年高级中等学校考试招生工作的意见",
+  "summary": "中招总分510；两考合一；考后知分填报；提前批/指标分配/统一招生；随迁可审报中职。",
+  "rules": [
+   "中招录取总成绩满分510分",
+   "语文数学外语各100；道法80；物理80；体育50",
+   "文化课考试时间2026年6月24日至25日",
+   "指标分配：考生总分须达到430分，综合素质评价须达到B等",
+   "按京政办发〔2012〕62号做好随迁子女报考中职资格审核"
+  ],
+  "ageRule": "初中毕业生（文件未写8月31日式截止）",
+  "hukouRule": "京籍正常中考；随迁中职按62号及审核",
+  "housingRule": "中招资格不以学区房划片表述",
+  "residencePermitRule": "随迁中职审核含居住证明等（细则见年审通知）",
+  "materials": [],
+  "timeline": [
+   "6月24–25考试",
+   "7月志愿与录取（以考试院日程为准）"
+  ],
+  "officialUrls": [
+   "https://www.beijing.gov.cn/zhengce/zhengcefagui/202603/t20260330_4569138.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "中考",
+   "中招",
+   "京教计〔2026〕5号"
+  ]
+ },
+ {
+  "id": "bjeea-gaokao-rules-2026",
+  "stage": "university",
+  "district": "beijing",
+  "schoolYear": "2026",
+  "title": "北京市2026年普通高等学校招生工作规定",
+  "summary": "京籍可报普通高考；随迁子女符合条件仅能参加高等职业学校招生考试。",
+  "rules": [
+   "具有北京市正式户口者可申请报名",
+   "符合京政办发〔2012〕62号及考试院随迁高职通知者可报名，但只能参加高职招生考试",
+   "体育/艺术类中专校集体户口应届生报考范围受限"
+  ],
+  "ageRule": "高级中等教育学校毕业或同等学力",
+  "hukouRule": "北京市正式户口；或随迁高职资格；或永居外国人等",
+  "housingRule": "",
+  "residencePermitRule": "随迁路径见专项通知",
+  "materials": [
+   "按报名通知与现场确认要求"
+  ],
+  "timeline": [
+   "报名分网上申请、填报缴费、现场确认三阶段"
+  ],
+  "officialUrls": [
+   "https://www.bjeea.cn/html/gkgz/tzgg/2026/0505/88114.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "高考",
+   "报名资格",
+   "随迁边界"
+  ]
+ },
+ {
+  "id": "bjeea-migrant-hoc-2027",
+  "stage": "university",
+  "district": "beijing",
+  "schoolYear": "2027",
+  "title": "关于做好2027年进城务工人员随迁子女在京参加高等职业学校招生考试报名工作的通知",
+  "summary": "五项条件同时满足方可申请在京高职考试；明确社保连续窗口2021-09至2026-08。",
+  "rules": [
+   "父母持有效居住证/居住登记卡/工作居住证",
+   "在京合法稳定住所",
+   "在京合法稳定职业已满6年",
+   "基本养老保险或医疗保险连续满6年（2021年9月至2026年8月，不含补缴）",
+   "子女本市学籍且在京连续就读高中阶段教育3年"
+  ],
+  "ageRule": "",
+  "hukouRule": "非京籍随迁路径（非普通本科高考）",
+  "housingRule": "合法稳定住所",
+  "residencePermitRule": "有效北京市居住证或登记卡或工作居住证",
+  "materials": [
+   "身份证",
+   "亲子关系证明",
+   "居住证明",
+   "社保缴费记录",
+   "学籍/毕业证明"
+  ],
+  "timeline": [
+   "2026-10-09至10申请",
+   "11/1前审核结果",
+   "11/1–4填报缴费",
+   "11/11前现场确认"
+  ],
+  "officialUrls": [
+   "https://www.bjeea.cn/html/gkgz/tzgg/2026/0922/88355.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "bjeea-migrant-hoc-2026",
+  "tags": [
+   "随迁子女",
+   "高职",
+   "2027"
+  ]
+ },
+ {
+  "id": "bjeea-migrant-hoc-2026",
+  "stage": "university",
+  "district": "beijing",
+  "schoolYear": "2026",
+  "title": "关于做好2026年进城务工人员随迁子女在京参加高等职业学校招生考试报名工作的通知",
+  "summary": "2026年随迁高职条件；社保窗口为2020-09至2025-08；结构与2027通知同类。",
+  "rules": [
+   "五项条件框架同2027通知",
+   "社保连续窗口：2020年9月至2025年8月（不含补缴）",
+   "申请时间：2025年10月10日9时至11日17时（历史窗口）"
+  ],
+  "ageRule": "",
+  "hukouRule": "非京籍随迁",
+  "housingRule": "合法稳定住所",
+  "residencePermitRule": "有效居住证/登记卡/工作居住证",
+  "materials": [
+   "身份",
+   "亲子",
+   "居住",
+   "社保",
+   "学籍证明"
+  ],
+  "timeline": [
+   "2025年10月申请窗口（已过）"
+  ],
+  "officialUrls": [
+   "https://www.bjeea.cn/html/gkgz/tzgg/2025/0925/87302.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "随迁子女",
+   "高职",
+   "2026",
+   "历史学年"
+  ]
+ },
+ {
+  "id": "bj-platform-yjrx-2026",
+  "stage": "primary+junior",
+  "district": "beijing",
+  "schoolYear": "2026",
+  "title": "北京市义务教育入学服务平台",
+  "summary": "幼升小/小升初统一网上入口；京通登录；提供操作手册与区入口。",
+  "rules": [
+   "信息采集须通过平台进行",
+   "本市户籍与非本市户籍分手册操作",
+   "学籍建立依据入学服务平台数据"
+  ],
+  "ageRule": "",
+  "hukouRule": "",
+  "housingRule": "",
+  "residencePermitRule": "",
+  "materials": [],
+  "timeline": [
+   "2026年5月1日起开通宣传；5月6日起采集（首都之窗报道）"
+  ],
+  "officialUrls": [
+   "https://yjrx.bjedu.cn/",
+   "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202605/t20260506_4637976.html"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "平台",
+   "幼升小",
+   "小升初"
+  ]
+ },
+ {
+  "id": "hd-school-directory-2024-2025",
+  "stage": "primary+junior",
+  "district": "haidian",
+  "schoolYear": "2024-2025",
+  "title": "2024-2025学年度海淀区义务教育学校名录",
+  "summary": "公开学校名称、办学层次、类型、地址；含苏家坨中心小学、育英科学城等。非划片文件。",
+  "rules": [
+   "仅证明学校公开登记信息",
+   "不得单独作为入学对应学校依据"
+  ],
+  "ageRule": "",
+  "hukouRule": "",
+  "housingRule": "",
+  "residencePermitRule": "",
+  "materials": [],
+  "timeline": [],
+  "officialUrls": [
+   "https://zyk.bjhd.gov.cn/sjkf/jyzy/202505/t20250509_4768788.shtml"
+  ],
+  "lastVerifiedAt": "2026-10-12",
+  "confidence": "verified",
+  "supersedes": "",
+  "tags": [
+   "学校名录",
+   "苏家坨",
+   "非划片"
+  ]
+ }
+]
