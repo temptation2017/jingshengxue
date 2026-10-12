@@ -1,6 +1,6 @@
 @tailwind base;@tailwind components;@tailwind utilities;
-:root{--bg:248 249 250;--card:255 255 255;--ink:20 23 26;--muted:88 95 103;--line:226 229 233;--subtle:241 243 245;--primary:22 110 92;--tint:230 243 239;--on-primary:255 255 255;--ok:21 128 61;--ok-bg:232 246 237;--fail:190 38 26;--fail-bg:253 236 234;--pend:146 94 0;--pend-bg:254 245 224;color-scheme:light}
-.dark{--bg:15 17 19;--card:24 27 30;--ink:236 238 240;--muted:160 167 175;--line:46 51 56;--subtle:32 36 40;--primary:96 200 172;--tint:22 50 44;--on-primary:8 28 23;--ok:110 210 150;--ok-bg:20 48 32;--fail:255 135 125;--fail-bg:64 26 24;--pend:236 188 100;--pend-bg:60 44 16;color-scheme:dark}
+:root{--accent:217 105 47;--accent-bg:252 238 229;--bg:245 246 244;--card:255 255 255;--ink:20 23 26;--muted:91 99 107;--line:227 230 227;--subtle:241 243 245;--primary:22 110 92;--tint:230 243 239;--on-primary:255 255 255;--ok:21 128 61;--ok-bg:232 246 237;--fail:190 38 26;--fail-bg:253 236 234;--pend:146 94 0;--pend-bg:254 245 224;color-scheme:light}
+.dark{--accent:242 162 104;--accent-bg:61 36 22;--bg:15 17 19;--card:24 27 30;--ink:236 238 240;--muted:160 167 175;--line:46 51 56;--subtle:32 36 40;--primary:96 200 172;--tint:22 50 44;--on-primary:8 28 23;--ok:110 210 150;--ok-bg:20 48 32;--fail:255 135 125;--fail-bg:64 26 24;--pend:236 188 100;--pend-bg:60 44 16;color-scheme:dark}
 html{-webkit-text-size-adjust:100%}
 body{@apply bg-bg text-ink font-sans text-base antialiased}
 a{@apply text-primary underline-offset-4}
@@ -13,3 +13,5 @@ select,input[type=date],input[type=month]{@apply rounded-sm border border-line b
 .no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media print{header,footer,.no-print{display:none!important}}
+@media print{body.print-mats *{visibility:hidden}body.print-mats #mats-print,body.print-mats #mats-print *{visibility:visible}body.print-mats #mats-print{position:absolute;left:0;top:0;width:100%}}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
