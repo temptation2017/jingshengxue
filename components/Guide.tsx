@@ -6,6 +6,7 @@ import { nextMilestone, LS } from '@/lib/roadmap';
 import { plan } from '@/lib/guide';
 import { Basis, Chip } from './ui';
 import StarterPath from './StarterPath';
+import KgCard from './KgCard';
 export default function Guide() {
   const p = useProfile();
   const [done, setDone] = useState<Record<string, boolean>>({});
@@ -21,6 +22,7 @@ export default function Guide() {
       <div className="mt-3"><Chip tone={pl.verdict === 'gap' ? 'gap' : pl.verdict === 'unknown' ? 'info' : pl.verdict === 'ok' ? 'ok' : 'warn'}>{pl.verdictText}</Chip></div>
       {pl.steps.length > 0 && <div className="mt-4"><div className="flex justify-between text-sm"><span>完成 {n} / {pl.steps.length}</span><span className="tabular-nums">{pct}%</span></div>
         <div className="mt-1 h-2.5 rounded-pill bg-sunken" role="progressbar" aria-label="行动清单进度" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}><div className="h-2.5 rounded-pill bg-accent transition-all duration-500" style={{ width: `${pct}%` }} /></div></div>}</div>
+    {m.stage === 'kindergarten' && p.district === 'haidian' && <KgCard />}
     {pl.notes.map(t => <p key={t} className="rounded-2xl bg-warn-soft p-3 text-sm text-warn">⚠ {t}</p>)}
     {pl.steps.length > 0 ? <ol className="space-y-3">{pl.steps.map((s, i) => { const on = !!done[key(s.id)]; return (
       <li key={s.id} className={`card p-4 transition ${on ? 'opacity-70' : ''}`}><div className="flex gap-3">

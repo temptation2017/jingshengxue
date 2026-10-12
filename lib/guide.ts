@@ -12,11 +12,11 @@ export function plan(p: Profile, m: Milestone): Plan {
     if (p.district !== 'haidian') return unknown('本站目前只核验了海淀区的入园细则。其他区的报名日期、志愿数每年都不一样。', [OFFICIAL.ryfw]);
     const lives = p.hukou === 'haidian' || p.housing !== 'none';
     const steps: Step[] = [
-      { id: 'kg1', title: '确认能证明「户籍在海淀」或「实际住在海淀」的材料', when: '现在', detail: '海淀入园看的是户籍所在地或家庭实际居住地，二选一即可。', materials: ['户口簿', '房产证明或租房等实际居住材料'], basis: { text: '海淀 2026：户籍所在地或家庭实际居住在海淀区的适龄儿童可参加信息采集。', src: OFFICIAL.hdRoster2026 } },
-      { id: 'kg2', title: `核对年龄：${Y - 4} 年 9 月 1 日至 ${Y - 3} 年 8 月 31 日出生`, when: `${Y} 年 5 月文件发布后`, detail: '小班按「前一年 9 月 1 日到当年 8 月 31 日」划出生窗口。差一天也要等下一年。', basis: { text: '海淀 2026 小班：2022-09-01 至 2023-08-31 出生。', src: OFFICIAL.hdRoster2026 } },
-      { id: 'kg3', title: '看当年《小班招生名录》，选 2–5 所意向园', when: `${Y} 年 5 月底`, detail: '重点读每所园招生简章里的「招生顺位」（录取先后规则）。单位办的园可能优先本单位职工子女。', entry: OFFICIAL.hdRoster2026, basis: { text: '海淀答疑：每名幼儿填报 2–5 个有序意向园；按招生顺位录取，同等顺位看意向顺序。', src: OFFICIAL.hdRoster2026 } },
-      { id: 'kg4', title: '在入园服务平台完成信息采集（报名）', when: `${Y} 年 6 月上中旬`, detail: '入口：ryfw.bjedu.cn → 选海淀 →「我要报名」。报名早晚不影响录取顺序，但别错过窗口。多孩家庭一个账号可添加多名子女。', materials: ['证件扫描件（清晰、每张不超过 1M）'], entry: OFFICIAL.ryfw, basis: { text: '海淀 2026 采集时间 6/1–6/15；报名早晚不影响优先序。', src: OFFICIAL.hdRoster2026 } },
-      { id: 'kg5', title: '等园所审核与录取通知，留意补录', when: `${Y} 年 6–8 月`, detail: '额满为止，不保证被任何一所意向园录取。现场材料审核以幼儿园通知为准。', basis: { text: '海淀答疑：额满为止，不保证被任一意向园录取。', src: OFFICIAL.hdRoster2026 } },
+      { id: 'kg1', title: '确认能证明「户籍在海淀」或「实际住在海淀」的材料', when: '现在', detail: '海淀入园看的是户籍所在地或家庭实际居住地，二选一即可。', materials: ['户口簿', '房产证明或租房等实际居住材料'], basis: { text: '海淀 2026：户籍所在地或家庭实际居住在海淀区的适龄儿童可参加信息采集。', src: OFFICIAL.hdKgFaq } },
+      { id: 'kg2', title: `核对年龄：${Y - 4} 年 9 月 1 日至 ${Y - 3} 年 8 月 31 日出生`, when: `${Y} 年 5 月文件发布后`, detail: '小班按「前一年 9 月 1 日到当年 8 月 31 日」划出生窗口。差一天也要等下一年。', basis: { text: '海淀 2026 小班：2022-09-01 至 2023-08-31 出生。', src: OFFICIAL.hdKgFaq } },
+      { id: 'kg3', title: '看当年《小班招生名录》，选 2–5 所意向园', when: `${Y} 年 5 月底`, detail: '重点读每所园招生简章里的「招生顺位」（录取先后规则）。单位办的园可能优先本单位职工子女。', entry: OFFICIAL.hdRoster2026, basis: { text: '海淀答疑：每名幼儿填报 2–5 个有序意向园；按招生顺位录取，同等顺位看意向顺序。', src: OFFICIAL.hdKgFaq } },
+      { id: 'kg4', title: '在入园服务平台完成信息采集（报名）', when: `${Y} 年 6 月上中旬`, detail: '入口：ryfw.bjedu.cn → 选海淀 →「我要报名」。报名早晚不影响录取顺序，但别错过窗口。多孩家庭一个账号可添加多名子女。', materials: ['证件扫描件（清晰、每张不超过 1M）'], entry: OFFICIAL.ryfw, basis: { text: '海淀 2026 采集时间 6/1–6/15；报名早晚不影响优先序。', src: OFFICIAL.hdKgFaq } },
+      { id: 'kg5', title: '等现场材料审核和录取结果', when: `${Y} 年 6 月 15 日以后`, detail: '网上审核通过后，幼儿园会做现场材料审核。6 月 15 日后不能再改信息和志愿。录取额满为止，不保证。没录上怎么补录：海淀官方未写明，可在平台看「未录取」状态后打学前科 88487315 咨询。', basis: { text: '答疑 7(4)：「网上信息审核通过后，幼儿园会进行现场材料审核。」7(8)：「各园按照招生顺位依次录取，额满为止。」', src: OFFICIAL.hdKgFaq } },
     ];
     if (p.hukou === 'nonBj') notes.push('非北京户口：能否录取、排在第几顺位，要看各园招生简章（本站尚未逐园核验）。');
     return { verdict: lives ? (m.verified ? 'conditional' : 'unknown') : 'gap', verdictText: lives ? (m.verified ? '可以报名，录取看各园顺位' : '大概率能报名，以当年文件为准') : '缺少在海淀的户籍或居住材料', steps, notes, entries: [OFFICIAL.ryfw, OFFICIAL.hdRoster2026] };
