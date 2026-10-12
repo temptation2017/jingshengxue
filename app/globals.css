@@ -1,15 +1,15 @@
 @tailwind base;@tailwind components;@tailwind utilities;
-:root{--bg:255 255 255;--ink:22 24 26;--muted:91 97 104;--line:228 230 232;--subtle:246 247 248;--primary:31 95 82;--on-primary:255 255 255;--ok:31 122 77;--fail:180 35 24;--pend:138 90 0;color-scheme:light}
-.dark{--bg:17 19 21;--ink:236 237 238;--muted:161 167 174;--line:44 48 53;--subtle:26 29 32;--primary:108 195 174;--on-primary:10 30 25;--ok:111 209 154;--fail:255 138 128;--pend:232 184 96;color-scheme:dark}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+:root{--bg:248 249 250;--card:255 255 255;--ink:20 23 26;--muted:88 95 103;--line:226 229 233;--subtle:241 243 245;--primary:22 110 92;--tint:230 243 239;--on-primary:255 255 255;--ok:21 128 61;--ok-bg:232 246 237;--fail:190 38 26;--fail-bg:253 236 234;--pend:146 94 0;--pend-bg:254 245 224;color-scheme:light}
+.dark{--bg:15 17 19;--card:24 27 30;--ink:236 238 240;--muted:160 167 175;--line:46 51 56;--subtle:32 36 40;--primary:96 200 172;--tint:22 50 44;--on-primary:8 28 23;--ok:110 210 150;--ok-bg:20 48 32;--fail:255 135 125;--fail-bg:64 26 24;--pend:236 188 100;--pend-bg:60 44 16;color-scheme:dark}
+html{-webkit-text-size-adjust:100%}
 body{@apply bg-bg text-ink font-sans text-base antialiased}
-a{@apply text-primary underline decoration-1 underline-offset-4}
-a:hover{text-decoration-thickness:2px}
-:focus-visible{outline:2px solid rgb(var(--primary));outline-offset:2px;border-radius:4px}
-select,input{@apply rounded-sm border border-line bg-bg px-3 py-2 text-base text-ink}
-.num{@apply inline-grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary text-xs font-semibold text-on-primary}
-.tbl{@apply w-full border-collapse text-base}
-.tbl th,.tbl td{@apply border-b border-line px-3 py-2.5 text-left align-top}
-.tbl thead th{@apply text-xs font-semibold text-muted}
+a{@apply text-primary underline-offset-4}
+:focus-visible{outline:2px solid rgb(var(--primary));outline-offset:2px;border-radius:6px}
+select,input[type=date],input[type=month]{@apply rounded-sm border border-line bg-card px-3 py-2 text-base text-ink}
+.card{@apply rounded-lg border border-line bg-card shadow-card}
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-sm px-4 py-2.5 font-semibold no-underline transition}
+.btn-primary{@apply btn bg-primary text-on-primary hover:opacity-90}
+.btn-ghost{@apply btn border border-line bg-card text-ink hover:bg-subtle}
+.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media print{header,footer,.no-print{display:none!important}a{color:inherit;text-decoration:none}}
+@media print{header,footer,.no-print{display:none!important}}

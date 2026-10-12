@@ -41,7 +41,7 @@ export interface Stage { key: StageKey; name: string; short: string; age: string
 
 const H = 'haidian' as const;
 export const STAGES: Stage[] = [
- { key: 'kindergarten', name: '幼儿园', short: '幼儿园', age: '约 3 岁', schoolYear: '2026 入园季（2027 未发布）', detailDistricts: ['haidian'], entries: ['ryfw', 'hdKgFaq'],
+ { key: 'kindergarten', name: '幼儿园', short: '幼儿园', age: '约 3 岁', schoolYear: '2026 入园季（2027 未发布）', detailDistricts: ['haidian'], entries: ['ryfw', 'hdKgFaq', 'hdKgRoster'],
    summary: '在网上报名，填几所想去的幼儿园；每所园按自己定的「招生顺位」（录取先后规则）录取。不划片，不考试。',
    compare: { local: '海淀：户籍在海淀，可报名', localNoHouse: '海淀：户籍在海淀或实际住在海淀，二选一即可报名', nonBj: '海淀：实际住在海淀即在报名范围；是否需要居住证，官方未写明', other: '官方未写明' },
    q: {
@@ -80,7 +80,7 @@ export const STAGES: Stage[] = [
     ] } },
    terms: [['信息采集', '网上报名、登记孩子信息'], ['招生顺位', '每所园自定的录取先后规则'], ['托班', '小班之前、约 2–3 岁的班'], ['普惠园', '收费受政府指导的幼儿园，含公办和部分民办']] },
 
- { key: 'primary', name: '小学', short: '小学', age: '满 6 周岁', schoolYear: '2026 入学（2027 未发布）', detailDistricts: ['haidian'], entries: ['yjrx', 'bjCompulsory', 'hdFaq'],
+ { key: 'primary', name: '小学', short: '小学', age: '满 6 周岁', schoolYear: '2026 入学（2027 未发布）', detailDistricts: ['haidian'], entries: ['yjrx', 'hdFaq', 'hdDirectory'],
    summary: '免试就近入学：按户籍和住房对应学校「登记入学」，部分情况「电脑派位」（电脑随机分配学校）。不考试。',
    compare: { local: '免试就近；海淀需户籍或房产在海淀并实际居住', localNoHouse: '海淀：外区京户无房需租住备案满 3 年 + 海淀就业满 3 年', nonBj: '需居住证、就业、住所、户口簿，到街镇联审', other: '台胞、华侨、博士后、工作居住证等「按本市户籍对待」' },
    q: {
@@ -128,7 +128,7 @@ export const STAGES: Stage[] = [
     ] } },
    terms: [['登记入学', '按户籍和住址对应学校，到校登记即入学'], ['划片', '按住址划定对应学校的范围'], ['电脑派位', '电脑随机分配到片区内某所学校'], ['19.1.1', '海淀规定：2019 年 1 月 1 日后取得产权证的房产入学走派位'], ['六年一学位', '同一房产六年内原则上只给一个学位'], ['联审', '非京户到居住地街镇集中审核材料']] },
 
- { key: 'junior', name: '初中', short: '初中', age: '小学毕业', schoolYear: '2026 入学', detailDistricts: ['haidian'], entries: ['yjrx', 'hdJunior'],
+ { key: 'junior', name: '初中', short: '初中', age: '小学毕业', schoolYear: '2026 入学', detailDistricts: ['haidian'], entries: ['hdJunior', 'yjrx', 'hdDirectory'],
    summary: '按学籍和户籍 / 房产类别，通过登记入学、对口直升或电脑派位进入初中。不考试。',
    q: {
     eligibility: { conclusion: { city: '完成小学教育即可；具体资格由区里规定。', haidian: '按学籍、户籍、房产分四类，非京户学籍学生需网上联审。' }, items: [
