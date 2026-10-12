@@ -1,8 +1,10 @@
 const v = n => `rgb(var(--${n}) / <alpha-value>)`;
 module.exports = { darkMode: 'class', content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
-  theme: { extend: {
-    colors: { bg: v('bg'), surface: v('surface'), sunken: v('sunken'), ink: v('ink'), muted: v('muted'), line: v('line'), accent: v('accent'), 'accent-ink': v('accent-ink'), soft: v('soft'), danger: v('danger'), 'danger-soft': v('danger-soft'), warn: v('warn'), 'warn-soft': v('warn-soft') },
-    borderRadius: { card: '18px', pill: '999px' },
-    boxShadow: { card: '0 1px 2px rgb(0 0 0 / .04), 0 8px 24px -12px rgb(0 0 0 / .12)', lift: '0 2px 4px rgb(0 0 0 / .05), 0 18px 40px -16px rgb(0 0 0 / .22)' },
-    fontFamily: { sans: ['"Inter"', '"PingFang SC"', '"HarmonyOS Sans SC"', '"MiSans"', '"Noto Sans SC"', '"Microsoft YaHei"', 'system-ui', 'sans-serif'] },
-  } }, plugins: [] };
+  theme: {
+    fontSize: { xs: ['13px', '1.5'], base: ['16px', '1.7'], lg: ['20px', '1.45'], xl: ['28px', '1.3'], '2xl': ['40px', '1.2'] },
+    extend: {
+      colors: { bg: v('bg'), ink: v('ink'), muted: v('muted'), line: v('line'), subtle: v('subtle'), primary: v('primary'), 'on-primary': v('on-primary'), ok: v('ok'), fail: v('fail'), pend: v('pend') },
+      borderRadius: { sm: '6px', md: '10px' },
+      fontFamily: { sans: ['-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Hiragino Sans GB"', '"Microsoft YaHei"', '"Noto Sans CJK SC"', '"Source Han Sans SC"', 'system-ui', 'sans-serif'] },
+      boxShadow: { pop: '0 8px 30px -8px rgb(0 0 0 / .18)' },
+    } }, plugins: [] };

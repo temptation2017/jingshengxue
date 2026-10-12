@@ -1,26 +1,25 @@
 import './globals.css';
 import Link from 'next/link';
-import { RETRIEVED } from '@/lib/site';
 import ThemeToggle from '@/components/ThemeToggle';
-export const metadata = { title: { default: '京升学 · 北京升学路线图', template: '%s · 京升学' }, description: '回答 4 个问题，得到你家孩子从幼儿园到大学的北京升学路线图和分步行动清单。每条规则附官方原文。' };
+import StageMenu from '@/components/StageMenu';
+import { RETRIEVED } from '@/lib/content';
+export const metadata = { title: { default: '京升学 · 北京入学政策查询', template: '%s · 京升学' }, description: '北京幼儿园到高考的入学条件：能不能报、怎么分、带什么、何时何地办。每条附官方原文。' };
 const themeInit = `try{var t=localStorage.getItem('jsx-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
-const NAV = [['/roadmap/', '我的路线图'], ['/learn/', '了解流程'], ['/library/', '资料库']];
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (<html lang="zh-CN" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: themeInit }} /></head><body>
-    <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 btn-primary">跳到正文</a>
-    <header className="sticky top-0 z-40 border-b border-line bg-bg/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 no-underline text-ink font-bold text-lg"><span aria-hidden className="grid h-8 w-8 place-items-center rounded-xl bg-accent text-accent-ink text-sm">升</span>京升学</Link>
-        <nav aria-label="主导航" className="ml-auto hidden sm:flex gap-1">{NAV.map(([h, t]) => <Link key={h} href={h} className="rounded-pill px-3 py-1.5 text-sm text-ink no-underline hover:bg-sunken">{t}</Link>)}</nav>
-        <ThemeToggle />
+    <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:bg-bg focus:p-2">跳到正文</a>
+    <header className="sticky top-0 z-40 border-b border-line bg-bg/90 backdrop-blur">
+      <div className="mx-auto flex h-14 max-w-5xl items-center gap-2 px-4">
+        <Link href="/" className="mr-2 font-semibold text-ink no-underline">京升学</Link>
+        <nav aria-label="主导航" className="flex items-center gap-1 text-base"><StageMenu /><Link href="/check/" className="rounded-sm px-2 py-1 text-ink no-underline hover:bg-subtle">条件自查</Link><Link href="/sources/" className="rounded-sm px-2 py-1 text-ink no-underline hover:bg-subtle">政策原文</Link></nav>
+        <div className="ml-auto hidden sm:block"><ThemeToggle /></div>
       </div>
-      <nav aria-label="主导航（手机）" className="sm:hidden mx-auto flex max-w-3xl gap-1 px-3 pb-2">{NAV.map(([h, t]) => <Link key={h} href={h} className="flex-1 rounded-pill bg-sunken px-2 py-1.5 text-center text-sm text-ink no-underline">{t}</Link>)}</nav>
     </header>
-    <main id="main" className="mx-auto max-w-3xl px-4 py-8 fade-in">{children}</main>
-    <footer className="border-t border-line">
-      <div className="mx-auto max-w-3xl px-4 py-6 text-sm text-muted space-y-1">
-        <p>本站非官方，不承诺录取；一切以市、区教委及招生单位当年正式文件为准。<Link href="/library/about/">免责声明</Link></p>
-        <p>政策检索 / 核对日期：{RETRIEVED}（北京时间）</p>
+    <main id="main">{children}</main>
+    <footer className="mt-24 border-t border-line">
+      <div className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-8 text-xs text-muted sm:flex-row sm:justify-between">
+        <p>非官方整理，不承诺录取；以市、区教委及招生单位当年正式文件为准。<Link href="/about/">关于与免责</Link></p>
+        <p>官方原文核对日期：{RETRIEVED} · <ThemeToggle /></p>
       </div>
     </footer>
   </body></html>);

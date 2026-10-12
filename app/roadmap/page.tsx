@@ -1,3 +1,3 @@
-import Roadmap from '@/components/Roadmap'; import { PageHead } from '@/components/ui';
-export const metadata = { title: '我家的升学路线图' };
-export default function P() { return <><PageHead eyebrow="第 1 层 · 你现在该做什么" title="我家的升学路线图" /><Roadmap /></>; }
+import Redirect from '@/components/Redirect';
+export const metadata = { title: '页面已移动', robots: { index: false } };
+export default function P() { return <Redirect to="/" />; }

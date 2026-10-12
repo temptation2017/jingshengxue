@@ -1,12 +1,3 @@
-export const metadata = { title: '日历' };
-const R = [
- ['幼儿园（海淀 2026）','6/1–6/15 信息采集 → 园所审核录取','已过'],
- ['小学（海淀 2026）','5/1 宣传；5/6–31 京户采集；5/11–29 联审；6/5–6 派位志愿；6/11 派位确认；6/13–14 登记；6/22–23「19.1.1」填报；6/30 派位；7 月上旬通知书','已过'],
- ['初中（海淀 2026）','5/6–9 回区采集；5/8–14 跨区受理；5/26–29 填志愿；6/4 一批录取；6/24–26 派位志愿；7/2 派位结果','已过'],
- ['中考（2026）','6/24–25 文化课考试；7 月志愿与录取（以考试院日程为准）','已过'],
- ['随迁子女高职（2027）','2026-10-09–10 申请；11/1 前审核结果；11/1–4 填报缴费；11/11 前现场确认','进行中'],
- ['2027 入园 / 义务教育 / 中考','未发布（截至 2026-10-12）。参照往年：3–4 月市级意见、4–5 月区细则、5–6 月采集','待发布'],
-];
-export default function Page() { return <div><h1 className="text-3xl font-bold tracking-tight mb-4">日历 / 时间线</h1>
- <div className="card prose-table overflow-x-auto"><table><thead><tr><th>事项</th><th>时间</th><th>状态</th></tr></thead><tbody>{R.map(r => <tr key={r[0]}><th scope="row">{r[0]}</th><td>{r[1]}</td><td><strong>{r[2]}</strong></td></tr>)}</tbody></table></div>
- <p className="mt-3">日期均来自对应学年官方文件，下一学年请勿直接套用。iCal 订阅将在 v1 提供。</p></div>; }
+import Redirect from '@/components/Redirect';
+export const metadata = { title: '页面已移动', robots: { index: false } };
+export default function P() { return <Redirect to="/stage/primary/" />; }
